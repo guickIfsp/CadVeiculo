@@ -1,7 +1,7 @@
 /*
     Aqui é definido alguns atributos para Veiclos.
  */
-package negocio;
+package main.java.negocio;
 
 /**
  *

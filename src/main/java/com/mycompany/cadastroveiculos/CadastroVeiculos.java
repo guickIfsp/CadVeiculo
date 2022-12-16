@@ -2,9 +2,9 @@
     Casse inicial, para inicio da nossa interface grafica do progama...
  */
 
-package com.mycompany.cadastroveiculos;
+package main.java.com.mycompany.cadastroveiculos;
 
-import apresentacao.Princiipal;
+import main.java.apresentacao.Principal;
 
 /**
  *
@@ -13,7 +13,7 @@ import apresentacao.Princiipal;
 public class CadastroVeiculos {
 
     public static void main(String[] args) {
-        Princiipal principal = new Princiipal();
+        Principal principal = new Principal();
         principal.setVisible(true);
         
     }

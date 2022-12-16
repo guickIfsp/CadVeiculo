@@ -3,10 +3,10 @@
     Vamos usar o ArrayList para, mas também pode ser usado banco de dados para isso.
 
  */
-package persistencia;
+package main.java.persistencia;
 
 import java.util.ArrayList;
-import negocio.Veiculo;
+import main.java.negocio.Veiculo;
 
 /**
  *

@@ -2,11 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JDialog.java to edit this template
  */
-package apresentacao;
+package main.java.apresentacao;
 
+import java.awt.Font;
 import java.util.ArrayList;
-import negocio.Veiculo;
-import persistencia.ControlaVeiculo;
+
+import main.java.negocio.Veiculo;
+import main.java.persistencia.ControlaVeiculo;
 
 /**
  *
@@ -18,19 +20,12 @@ public class DlgMostraVeiculos extends javax.swing.JDialog {
     public DlgMostraVeiculos(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
-        exibeInformaçoes();
+        exibeInformacoes();
     }
     
-    private void exibeInformaçoes(){
+    private void exibeInformacoes(){
     
     ArrayList<Veiculo> veiculos = cv.RetornaTodos();
-    
-        for (int i = 0; i < 500; i++) {
-            
-            tblVeiculos.setValueAt(" ", i,0);
-            tblVeiculos.setValueAt("", i, 1);
-            
-        }
         
           for (int i = 0; i < veiculos.size() && veiculos.get(i)!= null ; i++) {
             
@@ -46,6 +41,7 @@ public class DlgMostraVeiculos extends javax.swing.JDialog {
         super(parent, modal);
         this.cv = cv;
         initComponents();
+        exibeInformacoes();
     }
 
 
@@ -71,7 +67,7 @@ public class DlgMostraVeiculos extends javax.swing.JDialog {
             }
         });
 
-        tblVeiculos.setFont(new java.awt.Font("Times New Roman", 0, 36)); // NOI18N
+        tblVeiculos.setFont(new java.awt.Font("Serif", 0, 18)); // NOI18N
         tblVeiculos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null},
